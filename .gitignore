@@ -44,3 +44,5 @@ Temporary Items
 templates/index.html~
 app.py~
 *.html#
+templates/datetime.html
+templates/500.html~
