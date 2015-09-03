@@ -10,19 +10,39 @@
   		  <h1>User Input</h1>
 		 
 		  <div class=metanav>
-		    <h2>Please enter a stock ticker eg. GOOG, and check desired features.</h2>
+		    <h2>Please enter a stock ticker eg. GOOG.</h2>
 		    <form id='userinfoform' action='index' method='post'>
 		      <p>
 			Ticker symbol <input type='text' name='name_stock' />
 		      </p>
+		      <h2>Select the desired feature</h2>
 		      <p>
-			Closing price <input type='radio' name='button' value='4'/>
+			Closing price <input type='radio' name='button' value='4' checked/>
 		      </p>
 		      <p>
 			Adjusted closing price <input type='radio' name='button' value='11' />
 		      </p>
 		      <p>
 			Volume <input type='radio' name='button' value='5' />
+		      </p>
+		      <p>
+		      <h2>Select the time range</h2>
+			Last month <input type='radio' name='timespan' value='1' checked/>
+		      </p>
+		      <p>
+			Last year <input type='radio' name='timespan' value='12' />
+		      </p>
+		      <p>
+			All time <input type='radio' name='timespan' value='-1' />
+		      </p>
+		      <h2>Select the time resolution</h2>
+			Daily <input type='radio' name='timeres' value='daily' checked/>
+		      </p>
+		      <p>
+			Weekly <input type='radio' name='timeres' value='weekly' />
+		      </p>
+		      <p>
+			Monthly <input type='radio' name='timeres' value='monthly' />
 		      </p>
 		      <p>
 			<input type='submit' value='Submit' />
